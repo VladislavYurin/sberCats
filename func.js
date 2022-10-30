@@ -81,7 +81,7 @@ const showPopup = (list, type, catAge, catPic, catName, content, pickedCard) => 
         if (content===undefined){
             catinfo.innerText = "Нет описания :(";
         } else {
-        catinfo.innerText = content;
+            catinfo.innerText = content;
         }
 
         let name = document.createElement("div")
@@ -108,7 +108,7 @@ const showPopup = (list, type, catAge, catPic, catName, content, pickedCard) => 
         let rate = document.createElement("div");
         rate.classList.add("pickedCard__rate");
         
-        for (let i=0; i<(pickedCard.lastElementChild.lastElementChild.childElementCount)/2; i++){
+        for (let i=0; i<(pickedCard.lastElementChild.lastElementChild.childElementCount); i++){
             rate.innerHTML += "<span>★</span>";
         }
 
